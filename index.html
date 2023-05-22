@@ -32,7 +32,7 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#main-nav" data-bs-offset="75">
     <!-- Spinner Start -->
     <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
@@ -48,7 +48,7 @@
 
 
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0" >
+    <nav id="main-nav" class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0" >
         <a href="index.html" class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5">
             <h2 class="m-0 text-primary">JioTeck</h2>
         </a>
@@ -57,40 +57,24 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse" role="navigation" >
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <!-- <a href="index.html" class="nav-item nav-link active">Home</a>
-                <a href="about.html" class="nav-item nav-link">About</a>
-                <a href="service.html" class="nav-item nav-link">Service</a>
-                <a href="project.html" class="nav-item nav-link">Project</a>
-                <a href="contact.html" class="nav-item nav-link">Contact</a> -->
-                <!-- <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                    <div class="dropdown-menu bg-light m-0">
-                        <a href="#products-section" class="dropdown-item">Feature</a>
-                        <a href="quote.html" class="dropdown-item">Free Quote</a>
-                        <a href="team.html" class="dropdown-item">Our Team</a>
-                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                        <a href="404.html" class="dropdown-item">404 Page</a>
-                    </div>
-                </div> -->
-                <a href="#home-section" class="nav-item nav-link">Home</a>
+                <a  href="#home-section" id="home-section" class="nav-item nav-link active">Home</a>
                 <a href="#about-section" class="nav-item nav-link">About</a>
                 <a href="#service-section" class="nav-item nav-link">Service</a>
                 <a href="#project-section" class="nav-item nav-link">Project</a>
                 <a href="faq.html" class="nav-item nav-link">FAQ</a>
-
-                <!-- <a href="#contact-section" class="nav-item nav-link">Contact</a> -->
             </div>
             <a href="#contact-section" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Contact Us<i class="fa fa-arrow-right ms-3"></i></a>
         </div>
+       
     </nav>
     <!-- Navbar End -->
 
 
     <!-- Carousel Start -->
-    <div class="container-fluid p-0 pb-5 wow fadeIn" data-wow-delay="0.1s" id="home-section">
+    <div class="site-section container-fluid p-0 pb-5 wow fadeIn" data-wow-delay="0.1s" id="home-section">
         <div class="owl-carousel header-carousel position-relative">
             <div class="owl-carousel-item position-relative" data-dot="<img src='img/carousel-1.jpg'>">
-                <img class="img-fluid" src="img/carousel-1.jpg" alt="">
+                <img class="img-fluid" src="img/carousel-1.jpg" style="height: 586px;" alt="">
                 <div class="owl-carousel-inner">
                     <div class="container">
                         <div class="row justify-content-start">
@@ -104,7 +88,7 @@
                 </div>
             </div>
             <div class="owl-carousel-item position-relative" data-dot="<img src='img/carousel-2.jpg'>">
-                <img class="img-fluid" src="img/carousel-2.jpg" alt="">
+                <img class="img-fluid" src="img/carousel-2.jpg" style="height: 586px;" alt="">
                 <div class="owl-carousel-inner">
                     <div class="container">
                         <div class="row justify-content-start">
@@ -118,7 +102,7 @@
                 </div>
             </div>
             <div class="owl-carousel-item position-relative" data-dot="<img src='img/carousel-3.jpg'>">
-                <img class="img-fluid" src="img/carousel-3.jpg" alt="">
+                <img class="img-fluid" src="img/carousel-3.jpg" style="height: 586px;" alt="">
                 <div class="owl-carousel-inner">
                     <div class="container">
                         <div class="row justify-content-start">
@@ -187,94 +171,98 @@
 
 
     <!-- About Start -->
-    <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0" id="about-section">
-        <div class="container about px-lg-0">
-            <div class="row g-0 mx-lg-0">
-                <div class="col-lg-6 ps-lg-0 wow fadeIn" data-wow-delay="0.1s" style="min-height: 400px;">
-                    <div class="position-relative h-100">
-                        <img class="position-absolute img-fluid w-100 h-100" src="img/about.jpg" style="object-fit: cover;" alt="">
+    <section class="site-section container-xxl py-5" id="about-section">
+        <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+            <div class="container about px-lg-0">
+                <div class="row g-0 mx-lg-0">
+                    <div class="col-lg-6 ps-lg-0 wow fadeIn" data-wow-delay="0.1s" style="min-height: 400px;">
+                        <div class="position-relative h-100">
+                            <img class="position-absolute img-fluid w-100 h-100" src="img/about.jpg" style="object-fit: cover;" alt="">
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-6 about-text py-5 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="p-lg-5 pe-lg-0">
-                        <h1 class="text-primary">About Us</h6>
-                        <!-- <p>5+ years of solar and renewable energy expertise. Passionate team committed to sustainability. High-quality products and services. Let us help you make the switch to clean energy.</p> -->
-                        <p><i class="fa fa-check-circle text-primary me-3"></i>Solar and renewable energy experts</p>
-                        <p><i class="fa fa-check-circle text-primary me-3"></i>Focus on creating a more sustainable future</p>
-                        <p><i class="fa fa-check-circle text-primary me-3"></i>Expertise in helping customers switch to clean energy</p>
-                        <!-- <a href="" class="btn btn-primary rounded-pill py-3 px-5 mt-3">Explore More</a> -->
+                    <div class="col-lg-6 about-text py-5 wow fadeIn" data-wow-delay="0.5s">
+                        <div class="p-lg-5 pe-lg-0">
+                            <h1 class="text-primary">About Us</h6>
+                            <!-- <p>5+ years of solar and renewable energy expertise. Passionate team committed to sustainability. High-quality products and services. Let us help you make the switch to clean energy.</p> -->
+                            <p><i class="fa fa-check-circle text-primary me-3"></i>Solar and renewable energy experts</p>
+                            <p><i class="fa fa-check-circle text-primary me-3"></i>Focus on creating a more sustainable future</p>
+                            <p><i class="fa fa-check-circle text-primary me-3"></i>Expertise in helping customers switch to clean energy</p>
+                            <!-- <a href="" class="btn btn-primary rounded-pill py-3 px-5 mt-3">Explore More</a> -->
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!-- About End -->
 
 
     <!-- Service Start -->
-    <div class="container-xxl py-5" id="service-section">
-        <div class="container">
-            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <h1 class="text-primary">Our Services</h6>
-                <!-- <h1 class="mb-4">Powering your world sustainably with expert solar solutions</h1> -->
-                <!-- <h1 class="mb-4">Join the solar revolution today</h1> -->
-            </div>
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item rounded overflow-hidden">
-                        <img class="img-fluid" src="img/img-600x400-1.jpg" alt="">
-                        <div class="position-relative p-4 pt-0">
-                            <div class="service-icon">
-                                <i class="fa fa-solar-panel fa-3x"></i>
-                            </div>
-                            <h5 class="mb-3">Residential Solar Rooftop</h5>
-                            <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                            <a class="small fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
-                        </div>
-                    </div>
+    <section class="site-section container-xxl py-5" id="service-section">
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="text-primary">Our Services</h6>
+                    <!-- <h1 class="mb-4">Powering your world sustainably with expert solar solutions</h1> -->
+                    <!-- <h1 class="mb-4">Join the solar revolution today</h1> -->
                 </div>
-                <!-- <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item rounded overflow-hidden">
-                        <img class="img-fluid" src="img/img-600x400-2.jpg" alt="">
-                        <div class="position-relative p-4 pt-0">
-                            <div class="service-icon">
-                                <i class="fa fa-wind fa-3x"></i>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item rounded overflow-hidden">
+                            <img class="img-fluid" src="img/img-600x400-1.jpg" alt="">
+                            <div class="position-relative p-4 pt-0">
+                                <div class="service-icon">
+                                    <i class="fa fa-solar-panel fa-3x"></i>
+                                </div>
+                                <h5 class="mb-3">Residential Solar Rooftop</h5>
+                                <p>In line with the National Solar Mission's target of achieving 40 GW of solar power generation through PV rooftop systems, Gujarat has been allotted a target of 8.024 GW.</p>
+                                <a class="small fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
                             </div>
-                            <h4 class="mb-3">Wind Turbines</h4>
-                            <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                            <a class="small fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
                         </div>
                     </div>
-                </div> -->
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item rounded overflow-hidden">
-                        <img class="img-fluid" src="img/img-600x400-3.jpg" alt="">
-                        <div class="position-relative p-4 pt-0">
-                            <div class="service-icon">
-                                <i class="fa fa-lightbulb fa-3x"></i>
+                    <!-- <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-item rounded overflow-hidden">
+                            <img class="img-fluid" src="img/img-600x400-2.jpg" alt="">
+                            <div class="position-relative p-4 pt-0">
+                                <div class="service-icon">
+                                    <i class="fa fa-wind fa-3x"></i>
+                                </div>
+                                <h4 class="mb-3">Wind Turbines</h4>
+                                <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                                <a class="small fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
                             </div>
-                            <h5 class="mb-3">Industrial & Commaricial Solar</h5>
-                            <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                            <a class="small fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div> -->
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="service-item rounded overflow-hidden">
+                            <img class="img-fluid" src="img/img-600x400-3.jpg" alt="">
+                            <div class="position-relative p-4 pt-0">
+                                <div class="service-icon">
+                                    <i class="fa fa-lightbulb fa-3x"></i>
+                                </div>
+                                <h5 class="mb-3">Industrial & Commaricial Solar</h5>
+                                <p>Commercial or industrial solar systems offer cost savings, grid independence, financial security, and environmental benefits by reducing greenhouse gas emissions.</p>
+                                <a class="small fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item rounded overflow-hidden">
-                        <img class="img-fluid" src="img/img-600x400-4.jpg" alt="">
-                        <div class="position-relative p-4 pt-0">
-                            <div class="service-icon">
-                                <i class="fa fa-solar-panel fa-3x"></i>
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item rounded overflow-hidden">
+                            <img class="img-fluid" src="img/img-600x400-4.jpg" alt="">
+                            <div class="position-relative p-4 pt-0">
+                                <div class="service-icon">
+                                    <i class="fa fa-solar-panel fa-3x"></i>
+                                </div>
+                                <h5 class="mb-3">Ground Mounted Solar</h5>
+                                <p>A ground-mounted solar panel system can also increase its energy production with a tracking mechanism, which keeps the PV panels angled toward the sun all day long.</p>
+                                <a class="small fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
                             </div>
-                            <h5 class="mb-3">Ground Mounted Solar</h5>
-                            <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                            <a class="small fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!-- Service End -->
 
 
@@ -348,187 +336,191 @@
 
 
     <!-- Projects Start -->
-    <div class="container-xxl py-5" id="project-section">
-        <div class="container">
-            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <h1 class="text-primary">Our Projects</h6>
-                <!-- <h1 class="mb-4">Creating a brighter future with innovative solar projects</h1> -->
-            </div>
-            <div class="row mt-n2 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="col-12 text-center">
-                    <ul class="list-inline mb-5" id="portfolio-flters">
-                        <li class="mx-2 active" data-filter="*">All</li>
-                        <li class="mx-2" data-filter=".first">Solar Panels</li>
-                        <li class="mx-2" data-filter=".second">Wind Turbines</li>
-                        <li class="mx-2" data-filter=".third">Hydropower Plants</li>
-                    </ul>
+    <section class="site-section container-xxl py-5" id="project-section">
+        <div class="container-xxl py-5" >
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="text-primary">Our Projects</h6>
+                    <!-- <h1 class="mb-4">Creating a brighter future with innovative solar projects</h1> -->
                 </div>
-            </div>
-            <div class="row g-4 portfolio-container wow fadeInUp" data-wow-delay="0.5s">
-                <div class="col-lg-4 col-md-6 portfolio-item first">
-                    <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="img/img-600x400-6.jpg" alt="">
-                        <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="img/img-600x400-6.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                        </div>
-                    </div>
-                    <div class="pt-3">
-                        <p class="text-primary mb-0">Solar Panels</p>
-                        <hr class="text-primary w-25 my-2">
-                        <h5 class="lh-base">We Are pioneers of solar & renewable energy industry</h5>
+                <div class="row mt-n2 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="col-12 text-center">
+                        <ul class="list-inline mb-5" id="portfolio-flters">
+                            <li class="mx-2 active" data-filter="*">All</li>
+                            <li class="mx-2" data-filter=".first">Solar Panels</li>
+                            <li class="mx-2" data-filter=".second">Wind Turbines</li>
+                            <li class="mx-2" data-filter=".third">Hydropower Plants</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 portfolio-item second">
-                    <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="img/img-600x400-5.jpg" alt="">
-                        <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="img/img-600x400-5.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <!-- <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i class="fa fa-link"></i></a> -->
+                <div class="row g-4 portfolio-container wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="col-lg-4 col-md-6 portfolio-item first">
+                        <div class="portfolio-img rounded overflow-hidden">
+                            <img class="img-fluid" src="img/img-600x400-6.jpg" alt="">
+                            <div class="portfolio-btn">
+                                <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="img/img-600x400-6.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            </div>
+                        </div>
+                        <div class="pt-3">
+                            <p class="text-primary mb-0">Solar Panels</p>
+                            <hr class="text-primary w-25 my-2">
+                            <h5 class="lh-base">We Are pioneers of solar & renewable energy industry</h5>
                         </div>
                     </div>
-                    <div class="pt-3">
-                        <p class="text-primary mb-0">Wind Turbines</p>
-                        <hr class="text-primary w-25 my-2">
-                        <h5 class="lh-base">We Are pioneers of solar & renewable energy industry</h5>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item third">
-                    <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="img/img-600x400-4.jpg" alt="">
-                        <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="img/img-600x400-4.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                    <div class="col-lg-4 col-md-6 portfolio-item second">
+                        <div class="portfolio-img rounded overflow-hidden">
+                            <img class="img-fluid" src="img/img-600x400-5.jpg" alt="">
+                            <div class="portfolio-btn">
+                                <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="img/img-600x400-5.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <!-- <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i class="fa fa-link"></i></a> -->
+                            </div>
+                        </div>
+                        <div class="pt-3">
+                            <p class="text-primary mb-0">Wind Turbines</p>
+                            <hr class="text-primary w-25 my-2">
+                            <h5 class="lh-base">We Are pioneers of solar & renewable energy industry</h5>
                         </div>
                     </div>
-                    <div class="pt-3">
-                        <p class="text-primary mb-0">Hydropower Plants</p>
-                        <hr class="text-primary w-25 my-2">
-                        <h5 class="lh-base">We Are pioneers of solar & renewable energy industry</h5>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item first">
-                    <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="img/img-600x400-3.jpg" alt="">
-                        <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="img/img-600x400-3.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                    <div class="col-lg-4 col-md-6 portfolio-item third">
+                        <div class="portfolio-img rounded overflow-hidden">
+                            <img class="img-fluid" src="img/img-600x400-4.jpg" alt="">
+                            <div class="portfolio-btn">
+                                <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="img/img-600x400-4.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            </div>
+                        </div>
+                        <div class="pt-3">
+                            <p class="text-primary mb-0">Hydropower Plants</p>
+                            <hr class="text-primary w-25 my-2">
+                            <h5 class="lh-base">We Are pioneers of solar & renewable energy industry</h5>
                         </div>
                     </div>
-                    <div class="pt-3">
-                        <p class="text-primary mb-0">Solar Panels</p>
-                        <hr class="text-primary w-25 my-2">
-                        <h5 class="lh-base">We Are pioneers of solar & renewable energy industry</h5>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item second">
-                    <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="img/img-600x400-2.jpg" alt="">
-                        <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="img/img-600x400-2.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                    <div class="col-lg-4 col-md-6 portfolio-item first">
+                        <div class="portfolio-img rounded overflow-hidden">
+                            <img class="img-fluid" src="img/img-600x400-3.jpg" alt="">
+                            <div class="portfolio-btn">
+                                <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="img/img-600x400-3.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            </div>
+                        </div>
+                        <div class="pt-3">
+                            <p class="text-primary mb-0">Solar Panels</p>
+                            <hr class="text-primary w-25 my-2">
+                            <h5 class="lh-base">We Are pioneers of solar & renewable energy industry</h5>
                         </div>
                     </div>
-                    <div class="pt-3">
-                        <p class="text-primary mb-0">Wind Turbines</p>
-                        <hr class="text-primary w-25 my-2">
-                        <h5 class="lh-base">We Are pioneers of solar & renewable energy industry</h5>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item third">
-                    <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="img/img-600x400-1.jpg" alt="">
-                        <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="img/img-600x400-1.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                    <div class="col-lg-4 col-md-6 portfolio-item second">
+                        <div class="portfolio-img rounded overflow-hidden">
+                            <img class="img-fluid" src="img/img-600x400-2.jpg" alt="">
+                            <div class="portfolio-btn">
+                                <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="img/img-600x400-2.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            </div>
+                        </div>
+                        <div class="pt-3">
+                            <p class="text-primary mb-0">Wind Turbines</p>
+                            <hr class="text-primary w-25 my-2">
+                            <h5 class="lh-base">We Are pioneers of solar & renewable energy industry</h5>
                         </div>
                     </div>
-                    <div class="pt-3">
-                        <p class="text-primary mb-0">Hydropower Plants</p>
-                        <hr class="text-primary w-25 my-2">
-                        <h5 class="lh-base">We Are pioneers of solar & renewable energy industry</h5>
+                    <div class="col-lg-4 col-md-6 portfolio-item third">
+                        <div class="portfolio-img rounded overflow-hidden">
+                            <img class="img-fluid" src="img/img-600x400-1.jpg" alt="">
+                            <div class="portfolio-btn">
+                                <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="img/img-600x400-1.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            </div>
+                        </div>
+                        <div class="pt-3">
+                            <p class="text-primary mb-0">Hydropower Plants</p>
+                            <hr class="text-primary w-25 my-2">
+                            <h5 class="lh-base">We Are pioneers of solar & renewable energy industry</h5>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!-- Projects End -->
 
 
-    <!-- Quote Start -->
-    <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0" id="contact-section">
-        <div class="container quote px-lg-0">
-            <div class="row g-0 mx-lg-0">
-                <div class="col-lg-6 quote-text py-5 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="p-lg-5 pe-lg-0">
-                        <h1 class="text-primary">Contact Us</h6>
-                        <h5 class="mb-4">Connect with us today</h1>
-                        <form onsubmit="contactUs(); return false;" id="contactUsForm">
-                            <div class="row g-3">
-                                <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control border-0" id="contactUs-name" placeholder="Your Name" style="height: 55px;">
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <input type="email" class="form-control border-0" id="contactUs-email" placeholder="Your Email" style="height: 55px;">
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control border-0" id="contactUs-contact" placeholder="Your Mobile" style="height: 55px;">
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <select class="form-select border-0" style="height: 55px;" id="contactUs-service">
-                                        <option  selected>Select A Service</option>
-                                        <option  value="Residential Solar Rooftop">Residential Solar Rooftop</option>
-                                        <option  value="Industrial & Commaricial Solar">Industrial & Commaricial Solar</option>
-                                        <option  value="Ground Mounted Solar">Ground Mounted Solar</option>
-                                    </select>
-                                </div>
-                                <div class="col-12">
-                                    <textarea class="form-control border-0" id="contactUs-message" placeholder="Special Note"></textarea>
-                                </div>
-                                <div class="col-12">
-                                    <button class="btn btn-primary rounded-pill py-3 px-5" type="submit">Submit</button>
-                                </div>
-                            </div>
-                        </form>
-                         <!-- <form onsubmit="contactUs(); return false;" id="contactUsForm">
-                            <div class="row g-3">
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="contactUs-name" name="name" placeholder="Your Name" required>
-                                        <label for="name">Your Name</label>
+    <!-- contact Start -->
+    <section class="site-section container-fluid bg-light overflow-hidden my-5 px-lg-0" id="contact-section">
+        <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+            <div class="container quote px-lg-0">
+                <div class="row g-0 mx-lg-0">
+                    <div class="col-lg-6 quote-text py-5 wow fadeIn" data-wow-delay="0.5s">
+                        <div class="p-lg-5 pe-lg-0">
+                            <h1 class="text-primary">Contact Us</h6>
+                            <h5 class="mb-4">Connect with us today</h1>
+                            <form onsubmit="contactUs(); return false;" id="contactUsForm">
+                                <div class="row g-3">
+                                    <div class="col-12 col-sm-6">
+                                        <input type="text" class="form-control border-0" id="contactUs-name" placeholder="Your Name" style="height: 55px;">
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <input type="email" class="form-control border-0" id="contactUs-email" placeholder="Your Email" style="height: 55px;">
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <input type="text" class="form-control border-0" id="contactUs-contact" placeholder="Your Mobile" style="height: 55px;">
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <select class="form-select border-0" style="height: 55px;" id="contactUs-service">
+                                            <option  selected>Select A Service</option>
+                                            <option  value="Residential Solar Rooftop">Residential Solar Rooftop</option>
+                                            <option  value="Industrial & Commaricial Solar">Industrial & Commaricial Solar</option>
+                                            <option  value="Ground Mounted Solar">Ground Mounted Solar</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12">
+                                        <textarea class="form-control border-0" id="contactUs-message" placeholder="Special Note"></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <button class="btn btn-primary rounded-pill py-3 px-5" type="submit">Submit</button>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="email" class="form-control" id="contactUs-email" name="email" placeholder="Your Email" required>
-                                        <label for="email">Your Email</label>
+                            </form>
+                            <!-- <form onsubmit="contactUs(); return false;" id="contactUsForm">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="contactUs-name" name="name" placeholder="Your Name" required>
+                                            <label for="name">Your Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="email" class="form-control" id="contactUs-email" name="email" placeholder="Your Email" required>
+                                            <label for="email">Your Email</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <textarea class="form-control" placeholder="Message" id="contactUs-message" name="message" style="height: 100px" required></textarea>
+                                            <label for="message">Message</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button class="btn btn-primary w-100 py-3" type="submit">Send</button>
+                                        <button type="button" class="btn btn-primary w-100 py-3 spinner" disabled>
+                                            <i class="fas fa-circle-notch"></i>
+                                        </button>
                                     </div>
                                 </div>
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <textarea class="form-control" placeholder="Message" id="contactUs-message" name="message" style="height: 100px" required></textarea>
-                                        <label for="message">Message</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3" type="submit">Send</button>
-                                    <button type="button" class="btn btn-primary w-100 py-3 spinner" disabled>
-                                        <i class="fas fa-circle-notch"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </form> -->
+                            </form> -->
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-5 pe-lg-0" style="min-height: 400px;">
-                    
-                    <div class="position-relative h-100">
-                        <iframe class="position-absolute w-100 h-100" style="object-fit: cover;"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3709.5785266856014!2d71.215168574388!3d21.60236896783212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395880c0e23d9609%3A0xf9a8f06e25e529c!2sGlobal%20Solar%20Energy!5e0!3m2!1sen!2sin!4v1684128988690!5m2!1sen!2sin"
-                        frameborder="0" allowfullscreen="" aria-hidden="false"
-                        tabindex="0"></iframe>
+                    <div class="col-lg-5 pe-lg-0" style="min-height: 400px;">
+                        
+                        <div class="position-relative h-100">
+                            <iframe class="position-absolute w-100 h-100" style="object-fit: cover;"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3709.5785266856014!2d71.215168574388!3d21.60236896783212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395880c0e23d9609%3A0xf9a8f06e25e529c!2sGlobal%20Solar%20Energy!5e0!3m2!1sen!2sin!4v1684128988690!5m2!1sen!2sin"
+                            frameborder="0" allowfullscreen="" aria-hidden="false"
+                            tabindex="0"></iframe>
+                        </div>
                     </div>
+                
                 </div>
-               
             </div>
         </div>
-    </div>
-    <!-- Quote End -->
+    </section>
+    <!-- contact End -->
 
 
     <!-- Team Start -->

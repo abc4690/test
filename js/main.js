@@ -93,6 +93,14 @@
 
         portfolioIsotope.isotope({filter: $(this).data('filter')});
     });
-    
+    $(document).ready(function() {
+        $('#home-section').click(function(event) {
+          event.preventDefault(); // Prevent the default link behavior
+      
+          $('html, body').animate({ scrollTop: 0 }, 'slow'); // Scroll to the top of the page
+      
+          // You can customize the scroll animation by changing the 'slow' parameter
+        });
+      });
 })(jQuery);
 
