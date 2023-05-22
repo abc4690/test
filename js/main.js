@@ -97,7 +97,7 @@
         $('#home-section').click(function(event) {
           event.preventDefault(); // Prevent the default link behavior
       
-          $('html, body').animate({ scrollTop: 0 }, 'slow'); // Scroll to the top of the page
+          $('html, body').animate({ scrollTop: 0 }, 'fast'); // Scroll to the top of the page
       
           // You can customize the scroll animation by changing the 'slow' parameter
         });
