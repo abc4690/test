@@ -93,14 +93,22 @@
 
         portfolioIsotope.isotope({filter: $(this).data('filter')});
     });
+   //go to top
+    $('#home-section').click(function(event) {
+        event.preventDefault(); // Prevent the default link behavior
+    
+        $('html, body').animate({ scrollTop: 0 }, 'fast'); // Scroll to the top of the page
+    
+        // You can customize the scroll animation by changing the 'slow' parameter
+    });
   
-        $('#home-section').click(function(event) {
-          event.preventDefault(); // Prevent the default link behavior
-      
-          $('html, body').animate({ scrollTop: 0 }, 'fast'); // Scroll to the top of the page
-      
-          // You can customize the scroll animation by changing the 'slow' parameter
-        });
+    //close the toggle
+    $('.navbar-nav a').on('click', function() {
+        $('.navbar-toggler').addClass('collapsed');
+        $('.navbar-collapse').removeClass('show');
+      });
+    
+     
     
 
 
