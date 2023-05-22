@@ -102,5 +102,15 @@
           // You can customize the scroll animation by changing the 'slow' parameter
         });
       });
+
+
+      $(document).ready(function() {
+        // Close navbar toggle on link click
+        $('.navbar-nav a').on('click', function() {
+          if ($('.navbar-toggler').is(':visible')) {
+            $('.navbar-toggler').click();
+          }
+        });
+      });
 })(jQuery);
 
