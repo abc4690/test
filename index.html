@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>GioTeck - Renewable Energy Website Template</title>
+    <title>JioTeck - Renewable Energy Website Template</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -32,7 +32,7 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#main-nav" data-bs-offset="75">
+<body data-spy="scroll" data-target="#navbar">
     <!-- Spinner Start -->
     <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
@@ -41,34 +41,57 @@
     </div>
     <!-- Spinner End -->
 
+
+    <!-- Topbar Start -->
+    <!--  -->
+    <!-- Topbar End -->
+
+
     <!-- Navbar Start -->
-    <nav id="main-nav" class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0" >
+    <nav id="navbar" class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0" >
         <a href="index.html" class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5">
-            <h2 class="m-0 text-primary">GioTeck</h2>
+            <h2 class="m-0 text-primary">JioTeck</h2>
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse" role="navigation" >
+            <!-- data-spy="scroll" data-target="#navbar" -->
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a  id="home-section" href="#home-section"  class="nav-item nav-link">Home</a>
+                <!-- <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="service.html" class="nav-item nav-link">Service</a>
+                <a href="project.html" class="nav-item nav-link">Project</a>
+                <a href="contact.html" class="nav-item nav-link">Contact</a> -->
+                <!-- <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                    <div class="dropdown-menu bg-light m-0">
+                        <a href="#products-section" class="dropdown-item">Feature</a>
+                        <a href="quote.html" class="dropdown-item">Free Quote</a>
+                        <a href="team.html" class="dropdown-item">Our Team</a>
+                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                        <a href="404.html" class="dropdown-item">404 Page</a>
+                    </div>
+                </div> -->
+                <a href="#home-section" class="nav-item nav-link">Home</a>
                 <a href="#about-section" class="nav-item nav-link">About</a>
                 <a href="#service-section" class="nav-item nav-link">Service</a>
                 <a href="#project-section" class="nav-item nav-link">Project</a>
                 <a href="faq.html" class="nav-item nav-link">FAQ</a>
+
+                <!-- <a href="#contact-section" class="nav-item nav-link">Contact</a> -->
             </div>
-            <a href="#contact-section" class="nnav-item nav-link btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Contact Us<i class="fa fa-arrow-right ms-3"></i></a>
+            <a href="#contact-section" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Contact Us<i class="fa fa-arrow-right ms-3"></i></a>
         </div>
-       
     </nav>
     <!-- Navbar End -->
 
 
     <!-- Carousel Start -->
-    <div class="site-section container-fluid p-0 pb-5 wow fadeIn" id="home-section">
+    <div class="container-fluid p-0 pb-5 wow fadeIn" data-wow-delay="0.1s" id="home-section">
         <div class="owl-carousel header-carousel position-relative">
             <div class="owl-carousel-item position-relative" data-dot="<img src='img/carousel-1.jpg'>">
-                <img class="img-fluid" src="img/carousel-1.jpg" style="height: 586px;" alt="">
+                <img class="img-fluid" src="img/carousel-1.jpg" alt="">
                 <div class="owl-carousel-inner">
                     <div class="container">
                         <div class="row justify-content-start">
@@ -82,7 +105,7 @@
                 </div>
             </div>
             <div class="owl-carousel-item position-relative" data-dot="<img src='img/carousel-2.jpg'>">
-                <img class="img-fluid" src="img/carousel-2.jpg" style="height: 586px;" alt="">
+                <img class="img-fluid" src="img/carousel-2.jpg" alt="">
                 <div class="owl-carousel-inner">
                     <div class="container">
                         <div class="row justify-content-start">
@@ -96,7 +119,7 @@
                 </div>
             </div>
             <div class="owl-carousel-item position-relative" data-dot="<img src='img/carousel-3.jpg'>">
-                <img class="img-fluid" src="img/carousel-3.jpg" style="height: 586px;" alt="">
+                <img class="img-fluid" src="img/carousel-3.jpg" alt="">
                 <div class="owl-carousel-inner">
                     <div class="container">
                         <div class="row justify-content-start">
@@ -126,7 +149,7 @@
                         <h1 class="mb-0" data-toggle="counter-up">50</h1>
                     </div>
                     <h5 class="mb-3">Happy Customers</h5>
-                    <span>Happiness is when customers smile with satisfaction.</span>
+                    <span>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit</span>
                 </div>
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
                     <div class="d-flex align-items-center mb-4">
@@ -136,7 +159,7 @@
                         <h1 class="mb-0" data-toggle="counter-up">50</h1>
                     </div>
                     <h5 class="mb-3">Project Done</h5>
-                    <span>Transforming visions into reality, project done right.</span>
+                    <span>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit</span>
                 </div>
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
                     <div class="d-flex align-items-center mb-4">
@@ -146,7 +169,7 @@
                         <h1 class="mb-0" data-toggle="counter-up">05</h1>
                     </div>
                     <h5 class="mb-3">Awards Win</h5>
-                    <span>Televating excellence, an award-winning journey.</span>
+                    <span>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit</span>
                 </div>
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
                     <div class="d-flex align-items-center mb-4">
@@ -156,7 +179,7 @@
                         <h1 class="mb-0" data-toggle="counter-up">48</h1>
                     </div>
                     <h5 class="mb-3">Expert Workers</h5>
-                    <span>Mastering expertise, unleashing excellence.</span>
+                    <span>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit</span>
                 </div>
             </div>
         </div>
@@ -165,7 +188,7 @@
 
 
     <!-- About Start -->
-    <section class="site-section container-xxl py-5" id="about-section">
+    <div class="site-section container-xxl py-5" id="about-section">
         <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
             <div class="container about px-lg-0">
                 <div class="row g-0 mx-lg-0">
@@ -187,12 +210,12 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
     <!-- About End -->
 
 
     <!-- Service Start -->
-    <section class="site-section container-xxl py-5" id="service-section">
+    <div class="site-section container-xxl py-5" id="service-section">
         <div class="container-xxl py-5">
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
@@ -209,8 +232,8 @@
                                     <i class="fa fa-solar-panel fa-3x"></i>
                                 </div>
                                 <h5 class="mb-3">Residential Solar Rooftop</h5>
-                                <p>In line with the National Solar Mission's target of achieving 40 GW of solar power generation through PV rooftop systems, Gujarat has been allotted a target of 8.024 GW.</p>
-                                <!-- <a class="small fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a> -->
+                                <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                                <a class="small fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
                             </div>
                         </div>
                     </div>
@@ -235,8 +258,8 @@
                                     <i class="fa fa-lightbulb fa-3x"></i>
                                 </div>
                                 <h5 class="mb-3">Industrial & Commaricial Solar</h5>
-                                <p>Commercial or industrial solar systems offer cost savings, grid independence, financial security, and environmental benefits by reducing greenhouse gas emissions.</p>
-                                <!-- <a class="small fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a> -->
+                                <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                                <a class="small fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
                             </div>
                         </div>
                     </div>
@@ -248,23 +271,23 @@
                                     <i class="fa fa-solar-panel fa-3x"></i>
                                 </div>
                                 <h5 class="mb-3">Ground Mounted Solar</h5>
-                                <p>A ground-mounted solar panel system can also increase its energy production with a tracking mechanism, which keeps the PV panels angled toward the sun all day long.</p>
-                                <!-- <a class="small fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a> -->
+                                <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                                <a class="small fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
     <!-- Service End -->
 
 
-    <!-- why choose us Start -->
-    <section class="site-section container-xxl py-5">
-        <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+    <!-- Feature Start -->
+    <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+        <div class="container feature px-lg-0">
             <div class="row g-0 mx-lg-0">
-                <div class="col-lg-6 feature-text py-5  wow fadeIn" data-wow-delay="0.1s">
+                <div class="col-lg-6 feature-text py-5 wow fadeIn" data-wow-delay="0.1s">
                     <div class="p-lg-5 ps-lg-0">
                         <h1 class="text-primary">Why Choose Us!</h6>
                         <h5 class="mb-4">Experience, expertise and excellence in solar solutions</h1>
@@ -325,12 +348,12 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
     <!-- Feature End -->
 
 
     <!-- Projects Start -->
-    <section class="site-section container-xxl py-5" id="project-section">
+    <div class="site-section container-xxl py-5" id="project-section">
         <div class="container-xxl py-5" >
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
@@ -430,13 +453,13 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
     <!-- Projects End -->
 
 
-    <!-- contact Start -->
-    <section class="site-section container-fluid bg-light overflow-hidden my-5 px-lg-0" id="contact-section">
-        <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+    <!-- Quote Start -->
+    <div class="site-section container-xxl py-5" id="contact-section">
+        <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0" >
             <div class="container quote px-lg-0">
                 <div class="row g-0 mx-lg-0">
                     <div class="col-lg-6 quote-text py-5 wow fadeIn" data-wow-delay="0.5s">
@@ -470,34 +493,6 @@
                                     </div>
                                 </div>
                             </form>
-                            <!-- <form onsubmit="contactUs(); return false;" id="contactUsForm">
-                                <div class="row g-3">
-                                    <div class="col-md-6">
-                                        <div class="form-floating">
-                                            <input type="text" class="form-control" id="contactUs-name" name="name" placeholder="Your Name" required>
-                                            <label for="name">Your Name</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-floating">
-                                            <input type="email" class="form-control" id="contactUs-email" name="email" placeholder="Your Email" required>
-                                            <label for="email">Your Email</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-floating">
-                                            <textarea class="form-control" placeholder="Message" id="contactUs-message" name="message" style="height: 100px" required></textarea>
-                                            <label for="message">Message</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <button class="btn btn-primary w-100 py-3" type="submit">Send</button>
-                                        <button type="button" class="btn btn-primary w-100 py-3 spinner" disabled>
-                                            <i class="fas fa-circle-notch"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </form> -->
                         </div>
                     </div>
                     <div class="col-lg-5 pe-lg-0" style="min-height: 400px;">
@@ -513,8 +508,8 @@
                 </div>
             </div>
         </div>
-    </section>
-    <!-- contact End -->
+    </div>
+    <!-- Quote End -->
 
 
     <!-- Team Start -->
@@ -594,7 +589,7 @@
                         </div>
                     </div>
                     <div class="testimonial-text text-center rounded p-4">
-                        <p>GioTeck Solar Energy provided an outstanding experience from start to finish. The team was professional, knowledgeable, and delivered excellent results. Highly recommend for anyone considering solar.</p>
+                        <p>JioTeck Solar Energy provided an outstanding experience from start to finish. The team was professional, knowledgeable, and delivered excellent results. Highly recommend for anyone considering solar.</p>
                         <h5 class="mb-1">Client Name</h5>
                         <span class="fst-italic">Profession</span>
                     </div>
@@ -607,7 +602,7 @@
                         </div>
                     </div>
                     <div class="testimonial-text text-center rounded p-4">
-                        <p>GioTeck Solar Energy exceeded my expectations. Their team was knowledgeable, courteous, and efficient. I am thrilled with the results and would highly recommend them to anyone.</p>
+                        <p>JioTeck Solar Energy exceeded my expectations. Their team was knowledgeable, courteous, and efficient. I am thrilled with the results and would highly recommend them to anyone.</p>
                         <h5 class="mb-1">Client Name</h5>
                         <span class="fst-italic">Profession</span>
                     </div>
@@ -620,7 +615,7 @@
                         </div>
                     </div>
                     <div class="testimonial-text text-center rounded p-4">
-                        <p>Switching to solar with GioTeck was a great decision. The team provided exceptional service, quality work, and helped me save money on my energy bills. Highly recommend!</p>
+                        <p>Switching to solar with JioTeck was a great decision. The team provided exceptional service, quality work, and helped me save money on my energy bills. Highly recommend!</p>
                         <h5 class="mb-1">Client Name</h5>
                         <span class="fst-italic">Profession</span>
                     </div>
@@ -703,7 +698,7 @@
             <div class="copyright">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a href="#">GioTeck Solar</a>, All Right Reserved.
+                        &copy; <a href="#">JioTeck Solar</a>, All Right Reserved.
                     </div>
                 </div>
             </div>
