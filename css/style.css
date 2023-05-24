@@ -574,3 +574,8 @@
 .footer .copyright a:hover {
     color: var(--primary);
 }
+@media (min-width: 992px) {
+    .d-lg-none {
+      display: none;
+    }
+  }
